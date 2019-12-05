@@ -15,20 +15,22 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
-	font-size: 16px;
+	font-size: 17px;
 	font-style: inherit;
 	font-weight: inherit;
 	margin: 0;
-	outline: 0;
+	/* outline: 0; */
 	padding: 0;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    background-color: #9f8189;
 }
 *,
 *:before,
 *:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
 	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
-	box-sizing:         border-box;
+    box-sizing:         border-box;
+    
 }
 body {
 	background-color: #50a3a2;
@@ -83,6 +85,12 @@ body {
     text-align: center;
 
 }
+aside.img{
+    float: left;
+    margin:15px 0 0 15px;
+      height: 80px;
+      background-color: none;
+  }
 /* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
 @-webkit-viewport {
 	width: device-width;
@@ -103,7 +111,7 @@ body {
 *,*:before,*:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 i {
 	vertical-align: middle;
@@ -295,10 +303,10 @@ h6 {
 	border: none;
 }
 .red-btn {
-	background: #e96656;
+	background: #f7f2f2;
 }
 .green-btn {
-	background: #1e9e6b;
+	background: #e4e9e7;
 }
 .blue-btn {
 	background: #3ab0e2;
@@ -437,7 +445,9 @@ thead th{
 	color: #f7d861;
 }
 .dark-text {
-	color: #404040;
+    color: white;
+    font-weight: bold;
+
 }
 .white-text {
 	color: #FFFFFF;
@@ -715,20 +725,11 @@ a:active {
 .main-navigation ul ul a {
 	width: 200px;
 }
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-}
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
-}
+
 .main-navigation ul li:hover > ul {
 	display: block;
 }
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
-}
+
 .navbar-collapse{
 	overflow: visible !important;
 }
@@ -960,8 +961,7 @@ a:active {
  /*---------------------------------------
  **   10.1 Posts and pages                   -----
 -----------------------------------------*/
-.sticky {
-}
+
 .hentry {
 	margin: 0 0 1.5em;
 }
@@ -993,6 +993,7 @@ a:active {
 }
 .search-results .page-header {
 	margin: 0px 0 40px;
+
 }
 .page-header .page-title{
 	position: relative;
@@ -2096,7 +2097,9 @@ width: -webkit-calc(100% / 4);
 	margin-top: -15px;
 }
 .about-us .section-header .section-legend {
-	color: #FFF;
+    color: #FFF;
+    /* font-size: 100%; */
+
 }
 .about-us p {
 	text-align: left;
@@ -2139,7 +2142,9 @@ width: -webkit-calc(100% / 4);
 	width: auto;
 	float: none;
 	margin-top: 0;
-	margin-bottom: 0;
+    margin-bottom: 0;
+        font-size: 70%;
+
 }
 .skills .skill p {
 	line-height: 20px;
@@ -2259,7 +2264,8 @@ width: -webkit-calc(100% / 4);
 .our-team {
 	padding-bottom: 66px;
 	padding-top: 100px;
-	background: #FFFFFF;
+    background-color: #ffE5D8;    
+    
 }
 .team-member {
 	border-radius: 4px;
@@ -5616,3 +5622,58 @@ body.custom-background {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400";
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #1f263b;
+  background: -moz-linear-gradient(top, #1f263b 0%, #2c3654 100%);
+  background: -webkit-linear-gradient(top, #1f263b 0%, #2c3654 100%);
+  background: linear-gradient(to bottom, #1f263b 0%, #2c3654 100%);
+}
+
+div.absolute-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  transition: all .5s;
+}
+
+h3, h5 {
+  padding: 10px 30px 10px 30px;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0 0 5px 0 black;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+span#close {
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 0 5px black;
+  cursor: pointer;
+} */
